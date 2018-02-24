@@ -62,6 +62,7 @@ class Student
     row = DB[:conn].execute(sql, name)
     
     student = new_from_db(row)
+    binding.pry
     student
   end
   
